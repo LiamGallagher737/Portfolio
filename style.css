@@ -416,6 +416,10 @@ textarea{
     color: var(--first-color-alt);
 }
 
+.button--link:hover .button__icon{
+    transform: translateX(0.25rem);
+}
+
 /*==================== SOCIALS ====================*/
 .social,
 .social__container,
@@ -434,7 +438,7 @@ textarea{
     margin: 0 1rem;
     background-color: var(--input-color);
     border-radius: 1rem;
-    box-shadow: -2px -2px 8px #FAFAFF, 2px 2px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .social__icon{
@@ -977,7 +981,7 @@ textarea{
     }
 
     .project__modal-content{
-        width: 450px;
+        width: 650px;
     }
 
     .footer__container{
