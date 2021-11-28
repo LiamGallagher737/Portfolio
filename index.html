@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Liam Gallagher's personal portfolio for the Unity game enigne">
+    <meta name="keywords" content="coding, unity, liam, gallagher, game, development, dev, c#">
+    <meta name="author" content="Liam Gallagher">
+
+    <!-- FAVICON & TITLE -->
+    <link rel="shortcut icon" href="./images/Profile64.png" type="image/x-icon">
+    <title>Liam Gallagher</title>
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+
+    <!-- TUTORIAL === https://youtu.be/27JtRAI3QO8 -->
+
+</head>
+<body>
+    
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#about" class="nav__logo">Liam Gallagher</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#home" title="Home" class="nav__link active-link">
+                            <i class="uil uil-estate nav__icon"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" title="About" class="nav__link">
+                            <i class="uil uil-user nav__icon"></i> About
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#projects" title="Projects" class="nav__link">
+                            <i class="uil uil-folder nav__icon"></i> Projects
+                        </a>
+                    </li>
+                    <!-- <li class="nav__item">
+                        <a href="#store" class="nav__link">
+                            <i class="uil uil-store nav__icon"></i> Store
+                        </a>
+                    </li> -->
+                    <li class="nav__item">
+                        <a href="#contact" title="Contact" class="nav__link">
+                            <i class="uil uil-message nav__icon"></i> Contact
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close" title="Close"></i>
+            </div>
+
+            <div class="nav__btns">
+                <!-- Dark / Light -->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                <div class="nav__toggle" id="nav-toggle" title="Nav">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__social">
+
+                        <a href="https://discordapp.com/users/452652299047665678" title="Discord" target="_black" class="home__social-icon">
+                            <i class="uil uil-discord"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/liamgallagher737/" title="Instagram" target="_black" class="home__social-icon">
+                            <i class="uil uil-instagram-alt"></i>
+                        </a>
+
+                        <a href="https://github.com/LiamGallagher737" title="Github" target="_black" class="home__social-icon">
+                            <i class="uil uil-github"></i>
+                        </a>
+
+                    </div>
+
+                    <a href="#about" title="Liam Gallagher" class="home__img">
+                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <mask id="mask0" mask-type="alpha">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+
+                                <image class="home__blob-img" x='-5' y='-28' xlink:href="images/Profile400.webp"/>
+                            </g>
+                        </svg>
+                    </a>
+
+                    <div class="home__data">
+                        <h1 class="home__title">Hi, I'm <span class="home__title-name">Liam</span></h1>
+                        <h2 class="home__subtitle">I do stuff</h2>
+                        <p class="home__description">
+                            I am a student from New Zealand who has been learning game development since 2017.
+                        </p>
+                        <a href="#contact" class="button button--flex message__button">
+                            Message Me <i class="uil uil-message button__icon message__button-icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="home__scroll">
+                    <a href="#about" class="home__scroll-button button--flex">
+                        <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                        <span class="home__scroll-name">Scroll Down</span>
+                        <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <h2 class="section__title">About Me</h2>
+            <span class="section__subtitle">Introduction</span>
+            
+            <div class="about__container container grid">
+                <div class="about__data">
+                    <p class="about__description">
+                        I am a high school student that enjoys coding, computers and not much else. I attempted learning Unreal Engine 4 in 2017 and when that didn't go well I picked up Unity in 2018. Ever since I have been growing my skills with Unity and C# and have started many projects, though many go unfinished.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <!--==================== SOCIALS ====================-->
+        <section class="section" id="socials">
+            <div class="social">
+                <div class="social__container container">
+
+                    <a href="https://discordapp.com/users/452652299047665678" target="_black" class="social__content">
+                        <i class="uil uil-discord social__icon"></i>
+                        <div class="social__tooltip social__tooltip-left">CloutFroggo#6633</div>
+                    </a>
+
+                    <a href="https://github.com/LiamGallagher737" target="_blank" class="social__content">
+                        <i class="uil uil-github social__icon"></i>
+                        <div class="social__tooltip social__tooltip-top">LiamGallagher737</div>
+                    </a>
+
+                    <a href="https://www.instagram.com/liamgallagher737" target="_blank" class="social__content">
+                        <i class="uil uil-instagram-alt social__icon"></i>
+                        <div class="social__tooltip social__tooltip-right">@liamgallagher737</div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!--==================== PROJECTS ====================-->
+        <section class="projects section" id="projects">
+            <h2 class="section__title">Projects</h2>
+            <span class="section__subtitle">Some of my work</span>
+            
+            <div class="projects__container container grid">
+
+                <!--==================== PROJECT 1 ====================-->
+                <div class="project__content">
+                    <div>
+                        <h3 class="project__title">Skateboard Shooter</h3>
+                    </div>
+                    <p class="project__subtitle">
+                        A multiplayer skateboarding game with a twist
+                    </p>
+                    <span class="button button--flex button--small button--link project__button">
+                        View More
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+                    
+                    <div class="project__modal">
+                        <div class="project__modal-content">
+                            <h4 class="project__modal-title">Skateboard Shooter</h4>
+                            <i class="uil uil-times project__modal-close"></i>
+    
+                            <p>
+                                Skateboard Shooter is a multiplayer game I'm working on currently where unlike other skateboarding games you gain points for tricks, 
+                                In this game you get points you blasting a bullet in your opponent's head while your skateboard is propelled forward by a truck motor.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--==================== PROJECT 2 ====================-->
+                <div class="project__content">
+                    <div>
+                        <h3 class="project__title">Undercooked</h3>
+                    </div>
+                    <p class="project__subtitle">
+                        A cooking game I made with a friend as a school project
+                    </p>
+                    <span class="button button--flex button--small button--link project__button">
+                        View More
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+                    
+                    <div class="project__modal">
+                        <div class="project__modal-content">
+                            <h4 class="project__modal-title">Undercooked</h4>
+                            <i class="uil uil-times project__modal-close"></i>
+    
+                            <p>
+                                When you start you will be assigned a recipe which will appear in the top left corner of the screen. 
+                                You will need to make this recipe before the timer runs out, you can see the steps for making it by clicking the books. 
+                                Once you have finished the recipe place it by the window to the left or if the timer runs out you will be given a new recipe. 
+                                The goal is to complete as many recipes as you can without the timer running out. 
+                                If the timer runs out you get a fail the same as if you get 2 or less stars, once you have 3 fails the game is over.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        
+        <!--==================== CONTACT ====================-->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+            <span class="section__subtitle">Get in touch</span>
+
+            <div class="contact__container container grid">
+
+                    <div class="contact__infomation-container grid">
+                        <div class="contact__infomation">
+                            <i class="uil uil-discord contact__icon"></i>
+    
+                            <div>
+                                <h3 class="contact__title">Discord</h3>
+                                <span class="contact__subtitle"><a href="https://discordapp.com/users/452652299047665678" rel="noopener" title="Discord" target="_blank">CloutFroggo#6633</a></span>
+                            </div>
+                        </div>
+    
+                        <div class="contact__infomation">
+                            <i class="uil uil-instagram-alt contact__icon"></i>
+    
+                            <div>
+                                <h3 class="contact__title">Instagram</h3>
+                                <span class="contact__subtitle"><a href="https://www.instagram.com/liamgallagher737/" rel="noopener" title="Instagram" target="_blank">liamgallagher737</a></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form action="" class="contact__form grid" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                        <div class="contact__inputs grid">
+
+                            <div class="contact__content">
+                                <label for="name" class="contact__label">Name</label>
+                                <input type="text" name="name" id="name" class="contact__input">
+                            </div>
+
+                            <div class="contact__content">
+                                <label for="email" class="contact__label">Email</label>
+                                <input type="email" name="email" id="email" class="contact__input">
+                            </div>
+
+                        </div>
+
+                        <div class="contact__content">
+                            <label for="subject" class="contact__label">Subject</label>
+                            <input type="text" name="subject" id="subject" class="contact__input">
+                        </div>
+
+                        <div class="contact__content">
+                            <label for="message" class="contact__label">Message</label>
+                            <textarea name="message" id="message" cols="0" rows="7" class="contact__input"></textarea>
+                        </div>
+
+                        <div>
+                            <button type="submit" href="#contact" class="button button--flex contact__submit">
+                                Send 
+                                <i class="uil uil-message button__icon"></i>
+                            </button>
+                            <p style="visibility: hidden;">
+                                <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+                            </p>
+                        </div>
+
+                    </form>
+
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">Liam</h1>
+                    <span class="footer__subtitle">A guy who does stuff</span>
+                </div>
+
+                <ul class="footer__links">
+
+                    <li>
+                        <a href="#about" class="footer__link">About</a>
+                    </li>
+
+                    <li>
+                        <a href="#projects" class="footer__link">Projects</a>
+                    </li>
+
+                    <li>
+                        <a href="#contact" class="footer__link">Contact</a>
+                    </li>
+
+                </ul>
+
+                <div class="footer__socials">
+
+                    <a href="https://discordapp.com/users/452652299047665678" title="Discord" target="_black" class="footer__social">
+                        <i class="uil uil-discord"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/liamgallagher737/" title="Instagram" target="_black" class="footer__social">
+                        <i class="uil uil-instagram-alt"></i>
+                    </a>
+
+                    <a href="https://github.com/LiamGallagher737" title="Github" target="_black" class="footer__social">
+                        <i class="uil uil-github"></i>
+                    </a>
+
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; Liam Gallagher. All rights reserved<br>Website design with tutorials from Bedimcode on YouTube</p>
+        </div>
+    </footer>
+    
+    <!--==================== SCROLL UP ====================-->
+    <a href="#" title="Scroll Up" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+    <!-- APP JS -->
+    <script src="main.js"></script>
+</body>
+</html>
