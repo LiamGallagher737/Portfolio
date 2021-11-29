@@ -124,6 +124,7 @@
                         <a href="#contact" class="button button--flex message__button">
                             Message Me <i class="uil uil-message button__icon message__button-icon"></i>
                         </a>
+                        
                     </div>
                 </div>
 
@@ -146,13 +147,14 @@
                 <div class="about__data">
                     <p class="about__description">
                         I am a high school student that enjoys coding, computers and not much else. I attempted learning Unreal Engine 4 in 2017 and when that didn't go well I picked up Unity in 2018. Ever since I have been growing my skills with Unity and C# and have created many projects with capabilitys including modding, online multiplayer, local multiplayer and more.
+                        <br><br><a class="button button--flex button--small button--link resume__button" target="_blank" href="files/Resume.pdf">View Resume<i class="uil uil-arrow-right button__icon"></i></a>
                     </p>
                 </div>
             </div>
         </section>
         
         <!--==================== SOCIALS ====================-->
-        <section class="section" id="socials">
+        <section class="section">
             <div class="social">
                 <div class="social__container container">
 
@@ -284,81 +286,65 @@
 
             <div class="contact__container container grid">
 
-                    <div class="contact__infomation-container grid">
-                        <div class="contact__infomation">
-                            <i class="uil uil-discord contact__icon"></i>
-    
-                            <div>
-                                <h3 class="contact__title">Discord</h3>
-                                <span class="contact__subtitle"><a href="https://discordapp.com/users/452652299047665678" rel="noopener" title="Discord" target="_blank">CloutFroggo#6633</a></span>
-                            </div>
+                <div class="contact__infomation-container grid">
+                    <div class="contact__infomation">
+                        <i class="uil uil-discord contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Discord</h3>
+                            <span class="contact__subtitle"><a href="https://discordapp.com/users/452652299047665678" rel="noopener" title="Discord" target="_blank">CloutFroggo#6633</a></span>
                         </div>
-    
-                        <div class="contact__infomation">
-                            <i class="uil uil-instagram-alt contact__icon"></i>
-    
-                            <div>
-                                <h3 class="contact__title">Instagram</h3>
-                                <span class="contact__subtitle"><a href="https://www.instagram.com/liamgallagher737/" rel="noopener" title="Instagram" target="_blank">liamgallagher737</a></span>
-                            </div>
+                    </div>
+
+                    <div class="contact__infomation">
+                        <i class="uil uil-instagram-alt contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Instagram</h3>
+                            <span class="contact__subtitle"><a href="https://www.instagram.com/liamgallagher737/" rel="noopener" title="Instagram" target="_blank">liamgallagher737</a></span>
                         </div>
-    
-                        <div class="contact__infomation">
-                            <i class="uil uil-envelope-alt contact__icon"></i>
-    
-                            <div>
-                                <h3 class="contact__title">Email</h3>
-                                <span class="contact__subtitle"><a href="mailto:ljpgallagher@xtra.co.nz" rel="noopener" title="Instagram" target="_blank">ljpgallagher@xtra.co.nz</a></span>
-                            </div>
+                    </div>
+
+                </div>
+
+                <form action="" class="contact__form grid" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                    <div class="contact__inputs grid">
+
+                        <div class="contact__content">
+                            <label for="name" class="contact__label">Name</label>
+                            <input type="text" name="name" id="name" class="contact__input">
                         </div>
-    
-                        <div class="contact__infomation">
-                            <i class="uil uil-file contact__icon"></i>
-    
-                            <div>
-                                <h3 class="contact__title">Resume</h3>
-                                <span class="contact__subtitle"><a href="files/Resume.pdf" rel="noopener" title="Instagram" target="_blank">resume.liamg.codes</a></span>
-                            </div>
+
+                        <div class="contact__content">
+                            <label for="email" class="contact__label">Email</label>
+                            <input type="email" name="email" id="email" class="contact__input">
                         </div>
 
                     </div>
 
-                    <form action="" class="contact__form grid" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-                        <div class="contact__inputs grid">
+                    <div class="contact__content">
+                        <label for="subject" class="contact__label">Subject</label>
+                        <input type="text" name="subject" id="subject" class="contact__input">
+                    </div>
 
-                            <div class="contact__content">
-                                <label for="name" class="contact__label">Name</label>
-                                <input type="text" name="name" id="name" class="contact__input">
-                            </div>
+                    <div class="contact__content">
+                        <label for="message" class="contact__label">Message</label>
+                        <textarea name="message" id="message" cols="0" rows="7" class="contact__input"></textarea>
+                    </div>
 
-                            <div class="contact__content">
-                                <label for="email" class="contact__label">Email</label>
-                                <input type="email" name="email" id="email" class="contact__input">
-                            </div>
+                    <div>
+                        <button type="submit" href="#contact" class="button button--flex contact__submit">
+                            Send 
+                            <i class="uil uil-message button__icon"></i>
+                        </button>
+                        <p style="visibility: hidden;">
+                            <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+                        </p>
+                    </div>
 
-                        </div>
-
-                        <div class="contact__content">
-                            <label for="subject" class="contact__label">Subject</label>
-                            <input type="text" name="subject" id="subject" class="contact__input">
-                        </div>
-
-                        <div class="contact__content">
-                            <label for="message" class="contact__label">Message</label>
-                            <textarea name="message" id="message" cols="0" rows="7" class="contact__input"></textarea>
-                        </div>
-
-                        <div>
-                            <button type="submit" href="#contact" class="button button--flex contact__submit">
-                                Send 
-                                <i class="uil uil-message button__icon"></i>
-                            </button>
-                            <p style="visibility: hidden;">
-                                <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
-                            </p>
-                        </div>
-
-                    </form>
+                </form>
+                
+            </div>
 
         </section>
     </main>
