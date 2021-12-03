@@ -345,6 +345,7 @@ textarea{
 
 .home__description{
     margin-bottom: var(--mb-3 );
+    max-width: 90vw;
 }
 
 .message__button:hover .message__button-icon{
