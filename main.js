@@ -76,7 +76,7 @@ modalCloses.forEach((modalClose) => {
 const sections = document.querySelectorAll('section[id]')
 
 function scrollActive(){
-    const scrollY = window.pageYOffset
+    const scrollY = window.pageYOffset+100
 
     sections.forEach(current =>{
         const sectionHeight = current.offsetHeight
